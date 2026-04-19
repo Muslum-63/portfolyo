@@ -18,7 +18,7 @@ async function loadPost() {
     const meta   = posts.find(p => p.slug === slug);
 
     if (meta) {
-      document.title = `${meta.title} — Dyt. Ayşen Yetim`;
+      document.title = `${meta.title} — Dyt. Ebru Kara`;
       document.querySelector('meta[name="description"]')?.setAttribute('content', meta.excerpt);
 
       const d = new Date(meta.date);
