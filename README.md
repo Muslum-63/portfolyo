@@ -16,7 +16,7 @@ python -m http.server 8000
 
 ### 1. İsim / Marka
 
-Tüm dosyalarda `Dyt. Ad Soyad` ifadesini kendi adınızla değiştirin:
+Tüm dosyalarda `Dyt. Ayşen Yetim` ifadesini kendi adınızla değiştirin:
 - `index.html` → Ctrl+H (Replace All)
 - `blog.html`
 - `post.html`
