@@ -94,37 +94,42 @@
 
 
   <!-- ═══════ HERO ═══════ -->
-  <section class="min-h-screen flex items-center pt-16 bg-cream">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 w-full">
+  <section class="min-h-screen flex items-center pt-16 relative overflow-hidden"
+    style="background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1920&h=1080&fit=crop&q=80'); background-size: cover; background-position: center;">
+    <!-- Koyu yeşil gradient overlay -->
+    <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(15,40,15,0.88) 0%, rgba(30,70,30,0.75) 50%, rgba(15,40,15,0.65) 100%);"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 w-full">
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
 
         <!-- Sol metin -->
         <div>
-          <div class="inline-flex items-center gap-2 bg-olive-sf text-olive text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
-            <span class="w-1.5 h-1.5 rounded-full bg-olive"></span>
+          <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-6 border border-white/20">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#7ECB5F]"></span>
             <!-- TODO: Varsa unvan/sertifika ekleyin -->
             Uzman Diyetisyen · Obezite Danışmanlığı
           </div>
 
           <!-- TODO: Kendi sloganınızı yazın -->
-          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-ink tracking-tight leading-[1.1] mb-6">
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-6">
             Sağlıklı yaşam<br>
             yolculuğunuz<br>
-            <span class="text-olive">burada başlıyor.</span>
+            <span style="color:#7ECB5F">burada başlıyor.</span>
           </h1>
 
           <!-- TODO: Kendi tanıtım metninizi yazın -->
-          <p class="text-lg text-muted leading-relaxed mb-8 max-w-lg">
+          <p class="text-lg text-white/75 leading-relaxed mb-8 max-w-lg">
             Obezite ve kilo yönetimi konusunda kanıta dayalı, bütüncül ve kişiye özel beslenme programlarıyla yanınızdayım. Online veya yüz yüze danışmanlıkla hedefinize ulaşın.
           </p>
 
           <div class="flex flex-wrap gap-4 mb-10">
-            <a href="#iletisim" class="inline-flex items-center gap-2 bg-olive text-white font-semibold px-7 py-3.5 rounded-full hover:bg-olive-dk transition-colors shadow-sm">
+            <a href="#iletisim" class="inline-flex items-center gap-2 font-semibold px-7 py-3.5 rounded-full transition-colors shadow-lg"
+               style="background:#6B8E5A; color:white; hover:background:#4F7042;">
               Randevu Al
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/></svg>
             </a>
             <a href="https://wa.me/905556555555?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener"
-               class="inline-flex items-center gap-2 border-2 border-olive text-olive font-semibold px-7 py-3.5 rounded-full hover:bg-olive hover:text-white transition-colors">
+               class="inline-flex items-center gap-2 border-2 border-white/60 text-white font-semibold px-7 py-3.5 rounded-full hover:bg-white/15 transition-colors backdrop-blur-sm">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
               WhatsApp'tan Yaz
             </a>
@@ -132,29 +137,28 @@
 
           <!-- Etiket şeridi -->
           <div class="flex flex-wrap gap-2">
-            <span class="text-xs font-medium text-muted bg-white border border-olive-sf px-3 py-1.5 rounded-full">🎯 Obezite</span>
-            <span class="text-xs font-medium text-muted bg-white border border-olive-sf px-3 py-1.5 rounded-full">⚖️ Kilo Yönetimi</span>
-            <span class="text-xs font-medium text-muted bg-white border border-olive-sf px-3 py-1.5 rounded-full">🔬 Metabolik Sağlık</span>
-            <span class="text-xs font-medium text-muted bg-white border border-olive-sf px-3 py-1.5 rounded-full">🧠 Davranışsal Beslenme</span>
+            <span class="text-xs font-medium text-white/80 bg-white/10 backdrop-blur-sm border border-white/20 px-3 py-1.5 rounded-full">🎯 Obezite</span>
+            <span class="text-xs font-medium text-white/80 bg-white/10 backdrop-blur-sm border border-white/20 px-3 py-1.5 rounded-full">⚖️ Kilo Yönetimi</span>
+            <span class="text-xs font-medium text-white/80 bg-white/10 backdrop-blur-sm border border-white/20 px-3 py-1.5 rounded-full">🔬 Metabolik Sağlık</span>
+            <span class="text-xs font-medium text-white/80 bg-white/10 backdrop-blur-sm border border-white/20 px-3 py-1.5 rounded-full">🧠 Davranışsal Beslenme</span>
           </div>
         </div>
 
         <!-- Sağ portre -->
         <div class="flex justify-center md:justify-end">
           <div class="relative">
-            <div class="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden ring-4 ring-olive-sf ring-offset-8 ring-offset-cream shadow-xl bg-olive-sf flex items-center justify-center">
+            <div class="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden ring-4 ring-white/30 ring-offset-4 ring-offset-transparent shadow-2xl">
               <!-- TODO: assets/images/portrait.jpg ile değiştirin -->
-              <div class="text-center px-8">
-                <div class="text-6xl mb-3">👤</div>
-                <p class="text-xs text-muted font-medium">Portre fotoğrafınızı<br><code class="bg-olive-sf px-1 rounded">assets/images/portrait.jpg</code><br>olarak ekleyin</p>
-              </div>
-              <!-- Fotoğraf eklenince bu satırı etkinleştirin:
+              <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=600&fit=crop&q=80"
+                   alt="Diyetisyen — Dyt. Ayşen Yetim"
+                   class="w-full h-full object-cover">
+              <!-- Kendi fotoğrafınızı ekleyince yukarıdaki img'yi şununla değiştirin:
               <img src="./assets/images/portrait.jpg" alt="Dyt. Ayşen Yetim" class="w-full h-full object-cover object-top">
               -->
             </div>
             <!-- Dekoratif elementler -->
-            <div class="absolute -bottom-4 -left-4 w-20 h-20 bg-olive-sf rounded-2xl -z-10 rotate-12"></div>
-            <div class="absolute -top-4 -right-4 w-12 h-12 bg-olive/20 rounded-full -z-10"></div>
+            <div class="absolute -bottom-4 -left-4 w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl -z-10 rotate-12 border border-white/20"></div>
+            <div class="absolute -top-4 -right-4 w-12 h-12 rounded-full -z-10" style="background:rgba(107,142,90,0.5)"></div>
           </div>
         </div>
 
@@ -164,18 +168,34 @@
 
 
   <!-- ═══════ HAKKIMDA ═══════ -->
-  <section id="hakkimda" class="py-20 md:py-28 bg-white">
+  <section id="hakkimda" class="py-20 md:py-28 bg-white relative overflow-hidden">
+    <!-- Sağ üst dekoratif yeşil blob -->
+    <div class="absolute top-0 right-0 w-96 h-96 rounded-full -translate-y-1/2 translate-x-1/3 opacity-10" style="background:radial-gradient(circle, #6B8E5A, transparent)"></div>
+
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
 
         <!-- Görsel -->
         <div class="fade-up flex justify-center">
-          <div class="w-80 h-96 rounded-3xl overflow-hidden bg-olive-sf shadow-lg flex items-center justify-center">
-            <!-- TODO: İstediğiniz bir klinik/profesyonel fotoğraf -->
-            <div class="text-center px-8">
-              <div class="text-5xl mb-3">🏥</div>
-              <p class="text-xs text-muted">Klinik fotoğrafı eklenecek</p>
+          <div class="relative">
+            <div class="w-80 h-96 rounded-3xl overflow-hidden shadow-2xl">
+              <!-- Diyetisyen danışmanlık görseli -->
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=640&h=800&fit=crop&q=80"
+                   alt="Diyetisyen danışmanlık"
+                   class="w-full h-full object-cover">
             </div>
+            <!-- Üzerine binen yeşil stat kartı -->
+            <div class="absolute -bottom-5 -right-5 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 border border-olive-sf">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:#DCE5D4">
+                <svg class="w-5 h-5" style="color:#6B8E5A" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-ink">Kanıta Dayalı</p>
+                <p class="text-xs text-muted">Bilimsel Yaklaşım</p>
+              </div>
+            </div>
+            <!-- Sol üst dekoratif kare -->
+            <div class="absolute -top-4 -left-4 w-16 h-16 rounded-2xl -z-10 rotate-12" style="background:#DCE5D4"></div>
           </div>
         </div>
 
@@ -246,15 +266,18 @@
 
 
   <!-- ═══════ HİZMETLER ═══════ -->
-  <section id="hizmetler" class="py-20 md:py-28 bg-cream">
+  <section id="hizmetler" class="py-20 md:py-28 relative overflow-hidden"
+    style="background-image: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1920&h=900&fit=crop&q=80'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0" style="background:rgba(250,251,247,0.94);"></div>
+    <div class="absolute inset-0 pointer-events-none" style="background:linear-gradient(135deg, rgba(107,142,90,0.08) 0%, transparent 60%);"></div>
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="text-center mb-14 fade-up">
+      <div class="relative z-10 text-center mb-14 fade-up">
         <p class="text-olive text-sm font-semibold uppercase tracking-widest mb-3">Hizmetler</p>
         <h2 class="text-3xl md:text-5xl font-bold text-ink tracking-tight mb-4">Size özel danışmanlık</h2>
         <p class="text-muted max-w-xl mx-auto leading-relaxed">İhtiyacınıza ve yaşam koşullarınıza göre tasarlanmış esnek danışmanlık seçenekleri.</p>
       </div>
 
-      <div id="services-grid" class="grid md:grid-cols-3 gap-6">
+      <div id="services-grid" class="relative z-10 grid md:grid-cols-3 gap-6">
         <!-- js/app.js ile data/services.json'dan doldurulur -->
         <div class="col-span-3 text-center py-12 text-muted text-sm">Yükleniyor…</div>
       </div>
@@ -263,44 +286,43 @@
 
 
   <!-- ═══════ BAŞARI HİKAYELERİ ═══════ -->
-  <section id="basari" class="py-20 md:py-28 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+  <section id="basari" class="py-20 md:py-28 relative overflow-hidden"
+    style="background-image: url('https://images.unsplash.com/photo-1547592166-23ac45744acd?w=1920&h=900&fit=crop&q=80'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0" style="background:rgba(15,40,15,0.82);"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-14 fade-up">
-        <p class="text-olive text-sm font-semibold uppercase tracking-widest mb-3">Başarı Hikayeleri</p>
-        <h2 class="text-3xl md:text-5xl font-bold text-ink tracking-tight mb-4">Gerçek dönüşümler</h2>
-        <p class="text-muted max-w-xl mx-auto leading-relaxed">Danışanlarımın izni ve yazılı onayıyla paylaşılan dönüşüm hikayeleri.</p>
+        <p class="text-[#7ECB5F] text-sm font-semibold uppercase tracking-widest mb-3">Başarı Hikayeleri</p>
+        <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">Gerçek dönüşümler</h2>
+        <p class="text-white/65 max-w-xl mx-auto leading-relaxed">Danışanlarımın izni ve yazılı onayıyla paylaşılan dönüşüm hikayeleri.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
 
         <!-- Kart 1 -->
-        <div class="fade-up bg-cream rounded-2xl overflow-hidden border border-olive-sf">
-          <!-- TODO: Öncesi-sonrası görseli ekleyin (KVKK: yazılı izin şart) -->
-          <div class="h-56 bg-olive-sf flex items-center justify-center before-after-overlay">
-            <div class="text-center px-6">
-              <div class="text-4xl mb-2">📸</div>
-              <p class="text-xs text-muted">Öncesi / Sonrası<br>Görsel eklenecek</p>
-            </div>
+        <div class="fade-up bg-white rounded-2xl overflow-hidden shadow-xl">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=600&h=400&fit=crop&q=80"
+                 alt="Sağlıklı beslenme" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(15,40,15,0.6), transparent)"></div>
+            <!-- TODO: Gerçek öncesi-sonrası görseli ekleyin (KVKK: yazılı izin şart) -->
           </div>
           <div class="p-6">
             <p class="text-2xl font-bold text-olive mb-1"><!-- TODO: ör. "-22 kg" -->&mdash;</p>
             <p class="text-sm font-semibold text-ink mb-2">6 Ay · Obezite Programı</p>
-            <!-- TODO: Danışan alıntısı -->
             <p class="text-sm text-muted italic leading-relaxed">"Danışan yorumu buraya eklenecek."</p>
             <p class="text-xs text-muted mt-3">— Anonim Danışan</p>
           </div>
         </div>
 
         <!-- Kart 2 -->
-        <div class="fade-up bg-cream rounded-2xl overflow-hidden border border-olive-sf">
-          <div class="h-56 bg-olive-sf flex items-center justify-center before-after-overlay">
-            <div class="text-center px-6">
-              <div class="text-4xl mb-2">📸</div>
-              <p class="text-xs text-muted">Öncesi / Sonrası<br>Görsel eklenecek</p>
-            </div>
+        <div class="fade-up bg-white rounded-2xl overflow-hidden shadow-xl">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=400&fit=crop&q=80"
+                 alt="Sağlıklı yemek" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(15,40,15,0.6), transparent)"></div>
           </div>
           <div class="p-6">
-            <p class="text-2xl font-bold text-olive mb-1"><!-- TODO -->&mdash;</p>
+            <p class="text-2xl font-bold text-olive mb-1">&mdash;</p>
             <p class="text-sm font-semibold text-ink mb-2">3 Ay · Online Danışmanlık</p>
             <p class="text-sm text-muted italic leading-relaxed">"Danışan yorumu buraya eklenecek."</p>
             <p class="text-xs text-muted mt-3">— Anonim Danışan</p>
@@ -308,12 +330,11 @@
         </div>
 
         <!-- Kart 3 -->
-        <div class="fade-up bg-cream rounded-2xl overflow-hidden border border-olive-sf">
-          <div class="h-56 bg-olive-sf flex items-center justify-center before-after-overlay">
-            <div class="text-center px-6">
-              <div class="text-4xl mb-2">📸</div>
-              <p class="text-xs text-muted">Öncesi / Sonrası<br>Görsel eklenecek</p>
-            </div>
+        <div class="fade-up bg-white rounded-2xl overflow-hidden shadow-xl">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?w=600&h=400&fit=crop&q=80"
+                 alt="Beslenme danışmanlığı" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(15,40,15,0.6), transparent)"></div>
           </div>
           <div class="p-6">
             <p class="text-2xl font-bold text-olive mb-1">&mdash;</p>
@@ -329,7 +350,7 @@
 
 
   <!-- ═══════ YORUMLAR ═══════ -->
-  <section id="yorumlar" class="py-20 md:py-28 bg-cream">
+  <section id="yorumlar" class="py-20 md:py-28 relative overflow-hidden" style="background:#f0f5ec;">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-14 fade-up">
         <p class="text-olive text-sm font-semibold uppercase tracking-widest mb-3">Danışan Yorumları</p>
@@ -358,7 +379,7 @@
 
 
   <!-- ═══════ BLOG ÖN İZLEME ═══════ -->
-  <section id="blog-preview" class="py-20 md:py-28 bg-white">
+  <section id="blog-preview" class="py-20 md:py-28 bg-white relative overflow-hidden">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-14 gap-4 fade-up">
         <div>
@@ -406,8 +427,10 @@
 
 
   <!-- ═══════ İLETİŞİM ═══════ -->
-  <section id="iletisim" class="py-20 md:py-28 bg-cream">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+  <section id="iletisim" class="py-20 md:py-28 relative overflow-hidden"
+    style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1920&h=900&fit=crop&q=80'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0" style="background:rgba(245,250,242,0.96);"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-14 fade-up">
         <p class="text-olive text-sm font-semibold uppercase tracking-widest mb-3">İletişim</p>
         <h2 class="text-3xl md:text-5xl font-bold text-ink tracking-tight mb-4">Başlayalım</h2>
