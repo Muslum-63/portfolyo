@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO: "Dyt. Ad Soyad" → kendi adınızla değiştirin -->
+  <title>Dyt. Ad Soyad — Obezite ve Kilo Yönetimi Uzmanı</title>
+  <meta name="description" content="Obezite ve kilo yönetimi konusunda uzman diyetisyen. Online ve yüz yüze danışmanlık, kişiye özel beslenme programları.">
+  <meta property="og:title" content="Dyt. Ad Soyad — Obezite ve Kilo Yönetimi Uzmanı">
+  <meta property="og:description" content="Bilimsel ve bütüncül yaklaşımla kilo yönetimi danışmanlığı.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&h=630&fit=crop">
+  <meta name="theme-color" content="#6B8E5A">
+
+  <!-- JSON-LD Person schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dyt. Ad Soyad",
+    "jobTitle": "Diyetisyen",
+    "description": "Obezite ve kilo yönetimi uzmanı diyetisyen",
+    "url": "https://kullaniciadi.github.io/portfolyo/",
+    "telephone": "+905556555555"
+  }
+  </script>
+
+  <link rel="icon" href="./assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink:       '#1F2A1C',
+            muted:     '#6B7566',
+            olive:     '#6B8E5A',
+            'olive-dk':'#4F7042',
+            'olive-sf':'#DCE5D4',
+            cream:     '#FAFBF7',
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body class="font-sans antialiased bg-cream text-ink">
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-bold text-lg text-ink">
+        <span class="text-xl">🌿</span>
+        <!-- TODO: Kendi adınızla değiştirin -->
+        <span>Dyt. <span class="text-olive">Ad Soyad</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
+        <a href="#hakkimda"      class="hover:text-olive transition-colors">Hakkımda</a>
+        <a href="#hizmetler"     class="hover:text-olive transition-colors">Hizmetler</a>
+        <a href="#basari"        class="hover:text-olive transition-colors">Başarı Hikayeleri</a>
+        <a href="#blog-preview"  class="hover:text-olive transition-colors">Blog</a>
+        <a href="#iletisim"      class="hover:text-olive transition-colors">İletişim</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#iletisim" class="hidden md:inline-flex items-center gap-1.5 bg-olive text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-olive-dk transition-colors">
+          Randevu Al
+        </a>
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-md text-muted hover:text-ink" aria-label="Menüyü aç/kapat">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="flex-col gap-1 px-4 pb-4 bg-cream border-t border-olive-sf">
+      <a href="#hakkimda"     class="block py-2.5 text-sm font-medium text-muted hover:text-olive">Hakkımda</a>
+      <a href="#hizmetler"    class="block py-2.5 text-sm font-medium text-muted hover:text-olive">Hizmetler</a>
+      <a href="#basari"       class="block py-2.5 text-sm font-medium text-muted hover:text-olive">Başarı Hikayeleri</a>
+      <a href="#blog-preview" class="block py-2.5 text-sm font-medium text-muted hover:text-olive">Blog</a>
+      <a href="#iletisim"     class="block py-2.5 text-sm font-medium text-muted hover:text-olive">İletişim</a>
+      <a href="#iletisim" class="mt-2 block text-center bg-olive text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-olive-dk transition-colors">Randevu Al</a>
+    </div>
+  </header>
+
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="min-h-screen flex items-center pt-16 bg-cream">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 w-full">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+
+        <!-- Sol metin -->
+        <div>
+          <div class="inline-flex items-center gap-2 bg-olive-sf text-olive text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-olive"></span>
+            <!-- TODO: Varsa unvan/sertifika ekleyin -->
+            Uzman Diyetisyen · Obezite Danışmanlığı
+          </div>
+
+          <!-- TODO: Kendi sloganınızı yazın -->
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-ink tracking-tight leading-[1.1] mb-6">
+            Sağlıklı yaşam<br>
+            yolculuğunuz<br>
+            <span class="text-olive">burada başlıyor.</span>
+          </h1>
+
+          <!-- TODO: Kendi tanıtım metninizi yazın -->
+          <p class="text-lg text-muted leading-relaxed mb-8 max-w-lg">
+            Obezite ve kilo yönetimi konusunda kanıta dayalı, bütüncül ve kişiye özel beslenme programlarıyla yanınızdayım. Online veya yüz yüze danışmanlıkla hedefinize ulaşın.
+          </p>
+
+          <div class="flex flex-wrap gap-4 mb-10">
+            <a href="#iletisim" class="inline-flex items-center gap-2 bg-olive text-white font-semibold px-7 py-3.5 rounded-full hover:bg-olive-dk transition-colors shadow-sm">
+              Randevu Al
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/></svg>
+            </a>
+            <a href="https://wa.me/905556555555?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 border-2 border-olive text-olive font-semibold px-7 py-3.5 rounded-full hover:bg-olive hover:text-white transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              WhatsApp'tan Yaz
+            </a>
+          </div>
+
+          <!-- Etiket şeridi -->
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs font-medium text-muted bg-white border border-olive-sf px-3 py-1.5 rounded-full">🎯 Obezite</span>
+            <span class="text-xs font-medium text-muted bg-white border border-olive-sf px-3 py-1.5 rounded-full">⚖️ Kilo Yönetimi</span>
+            <span class="text-xs font-medium text-muted bg-white border border-olive-sf px-3 py-1.5 rounded-full">🔬 Metabolik Sağlık</span>
+            <span class="text-xs font-medium text-muted bg-white border border-olive-sf px-3 py-1.5 rounded-full">🧠 Davranışsal Beslenme</span>
+          </div>
+        </div>
+
+        <!-- Sağ portre -->
+        <div class="flex justify-center md:justify-end">
+          <div class="relative">
+            <div class="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden ring-4 ring-olive-sf ring-offset-8 ring-offset-cream shadow-xl bg-olive-sf flex items-center justify-center">
+              <!-- TODO: assets/images/portrait.jpg ile değiştirin -->
+              <div class="text-center px-8">
+                <div class="text-6xl mb-3">👤</div>
+                <p class="text-xs text-muted font-medium">Portre fotoğrafınızı<br><code class="bg-olive-sf px-1 rounded">assets/images/portrait.jpg</code><br>olarak ekleyin</p>
+              </div>
+              <!-- Fotoğraf eklenince bu satırı etkinleştirin:
+              <img src="./assets/images/portrait.jpg" alt="Dyt. Ad Soyad" class="w-full h-full object-cover object-top">
+              -->
+            </div>
+            <!-- Dekoratif elementler -->
+            <div class="absolute -bottom-4 -left-4 w-20 h-20 bg-olive-sf rounded-2xl -z-10 rotate-12"></div>
+            <div class="absolute -top-4 -right-4 w-12 h-12 bg-olive/20 rounded-full -z-10"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════ HAKKIMDA ═══════ -->
+  <section id="hakkimda" class="py-20 md:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+
+        <!-- Görsel -->
+        <div class="fade-up flex justify-center">
+          <div class="w-80 h-96 rounded-3xl overflow-hidden bg-olive-sf shadow-lg flex items-center justify-center">
+            <!-- TODO: İstediğiniz bir klinik/profesyonel fotoğraf -->
+            <div class="text-center px-8">
+              <div class="text-5xl mb-3">🏥</div>
+              <p class="text-xs text-muted">Klinik fotoğrafı eklenecek</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metin -->
+        <div class="fade-up">
+          <p class="text-olive text-sm font-semibold uppercase tracking-widest mb-3">Hakkımda</p>
+          <!-- TODO: Kendi adınızı yazın -->
+          <h2 class="text-3xl md:text-4xl font-bold text-ink tracking-tight mb-6">Dyt. Ad Soyad</h2>
+
+          <!-- TODO: Kendi tanıtım metninizi yazın -->
+          <p class="text-muted leading-relaxed mb-4">
+            [Üniversite adı] Beslenme ve Diyetetik bölümünden mezun olduktan sonra obezite ve metabolik hastalıklar alanında uzmanlaştım. X yıllık klinik deneyimimle yüzlerce danışanın sağlıklı yaşam hedeflerine ulaşmasına yardımcı oldum.
+          </p>
+          <p class="text-muted leading-relaxed mb-8">
+            Kanıta dayalı, bütüncül ve kişiye özel yaklaşımımla sadece kilo vermenizi değil; sağlıklı ve sürdürülebilir bir yaşam biçimi edinmenizi hedefliyorum.
+          </p>
+
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-olive-sf flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4 text-olive" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm">Eğitim</p>
+                <!-- TODO: Üniversite ve bölüm bilginizi ekleyin -->
+                <p class="text-muted text-sm">Üniversite Adı — Beslenme ve Diyetetik</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-olive-sf flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4 text-olive" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm">Uzmanlık</p>
+                <p class="text-muted text-sm">Obezite, metabolik hastalıklar, kilo yönetimi</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-olive-sf flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4 text-olive" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm">Deneyim</p>
+                <!-- TODO: Yıl ve kurum bilgilerinizi ekleyin -->
+                <p class="text-muted text-sm">X yıl klinik deneyim — [Kurum / Hastane]</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-olive-sf flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4 text-olive" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm">Sertifikalar</p>
+                <!-- TODO: Sertifika bilgilerinizi ekleyin -->
+                <p class="text-muted text-sm">Sertifika 1 · Sertifika 2 · [diğer]</p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#iletisim" class="inline-flex items-center gap-2 bg-olive text-white font-semibold px-7 py-3 rounded-full hover:bg-olive-dk transition-colors">
+            İletişime Geç
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════ HİZMETLER ═══════ -->
+  <section id="hizmetler" class="py-20 md:py-28 bg-cream">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-up">
+        <p class="text-olive text-sm font-semibold uppercase tracking-widest mb-3">Hizmetler</p>
+        <h2 class="text-3xl md:text-5xl font-bold text-ink tracking-tight mb-4">Size özel danışmanlık</h2>
+        <p class="text-muted max-w-xl mx-auto leading-relaxed">İhtiyacınıza ve yaşam koşullarınıza göre tasarlanmış esnek danışmanlık seçenekleri.</p>
+      </div>
+
+      <div id="services-grid" class="grid md:grid-cols-3 gap-6">
+        <!-- js/app.js ile data/services.json'dan doldurulur -->
+        <div class="col-span-3 text-center py-12 text-muted text-sm">Yükleniyor…</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════ BAŞARI HİKAYELERİ ═══════ -->
+  <section id="basari" class="py-20 md:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-up">
+        <p class="text-olive text-sm font-semibold uppercase tracking-widest mb-3">Başarı Hikayeleri</p>
+        <h2 class="text-3xl md:text-5xl font-bold text-ink tracking-tight mb-4">Gerçek dönüşümler</h2>
+        <p class="text-muted max-w-xl mx-auto leading-relaxed">Danışanlarımın izni ve yazılı onayıyla paylaşılan dönüşüm hikayeleri.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Kart 1 -->
+        <div class="fade-up bg-cream rounded-2xl overflow-hidden border border-olive-sf">
+          <!-- TODO: Öncesi-sonrası görseli ekleyin (KVKK: yazılı izin şart) -->
+          <div class="h-56 bg-olive-sf flex items-center justify-center before-after-overlay">
+            <div class="text-center px-6">
+              <div class="text-4xl mb-2">📸</div>
+              <p class="text-xs text-muted">Öncesi / Sonrası<br>Görsel eklenecek</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-2xl font-bold text-olive mb-1"><!-- TODO: ör. "-22 kg" -->&mdash;</p>
+            <p class="text-sm font-semibold text-ink mb-2">6 Ay · Obezite Programı</p>
+            <!-- TODO: Danışan alıntısı -->
+            <p class="text-sm text-muted italic leading-relaxed">"Danışan yorumu buraya eklenecek."</p>
+            <p class="text-xs text-muted mt-3">— Anonim Danışan</p>
+          </div>
+        </div>
+
+        <!-- Kart 2 -->
+        <div class="fade-up bg-cream rounded-2xl overflow-hidden border border-olive-sf">
+          <div class="h-56 bg-olive-sf flex items-center justify-center before-after-overlay">
+            <div class="text-center px-6">
+              <div class="text-4xl mb-2">📸</div>
+              <p class="text-xs text-muted">Öncesi / Sonrası<br>Görsel eklenecek</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-2xl font-bold text-olive mb-1"><!-- TODO -->&mdash;</p>
+            <p class="text-sm font-semibold text-ink mb-2">3 Ay · Online Danışmanlık</p>
+            <p class="text-sm text-muted italic leading-relaxed">"Danışan yorumu buraya eklenecek."</p>
+            <p class="text-xs text-muted mt-3">— Anonim Danışan</p>
+          </div>
+        </div>
+
+        <!-- Kart 3 -->
+        <div class="fade-up bg-cream rounded-2xl overflow-hidden border border-olive-sf">
+          <div class="h-56 bg-olive-sf flex items-center justify-center before-after-overlay">
+            <div class="text-center px-6">
+              <div class="text-4xl mb-2">📸</div>
+              <p class="text-xs text-muted">Öncesi / Sonrası<br>Görsel eklenecek</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-2xl font-bold text-olive mb-1">&mdash;</p>
+            <p class="text-sm font-semibold text-ink mb-2">4 Ay · Yüz Yüze Danışmanlık</p>
+            <p class="text-sm text-muted italic leading-relaxed">"Danışan yorumu buraya eklenecek."</p>
+            <p class="text-xs text-muted mt-3">— Anonim Danışan</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════ YORUMLAR ═══════ -->
+  <section id="yorumlar" class="py-20 md:py-28 bg-cream">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-up">
+        <p class="text-olive text-sm font-semibold uppercase tracking-widest mb-3">Danışan Yorumları</p>
+        <h2 class="text-3xl md:text-5xl font-bold text-ink tracking-tight mb-4">Onlar ne diyor?</h2>
+      </div>
+
+      <div class="relative overflow-hidden">
+        <div class="flex" style="overflow:hidden">
+          <div id="testimonial-track" class="testimonial-track w-full">
+            <!-- js/app.js ile doldurulur -->
+            <div class="testimonial-slide"><div class="bg-white rounded-2xl p-7 text-center text-muted text-sm py-12">Yükleniyor…</div></div>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-4 mt-8">
+          <button id="prev-btn" class="w-10 h-10 rounded-full border-2 border-olive-sf flex items-center justify-center text-muted hover:border-olive hover:text-olive transition-colors opacity-40" aria-label="Önceki">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+          </button>
+          <button id="next-btn" class="w-10 h-10 rounded-full border-2 border-olive-sf flex items-center justify-center text-muted hover:border-olive hover:text-olive transition-colors" aria-label="Sonraki">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════ BLOG ÖN İZLEME ═══════ -->
+  <section id="blog-preview" class="py-20 md:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-14 gap-4 fade-up">
+        <div>
+          <p class="text-olive text-sm font-semibold uppercase tracking-widest mb-3">Blog</p>
+          <h2 class="text-3xl md:text-5xl font-bold text-ink tracking-tight">Beslenme ve sağlık</h2>
+        </div>
+        <a href="blog.html" class="inline-flex items-center gap-1.5 text-olive font-semibold hover:text-olive-dk transition-colors text-sm whitespace-nowrap">
+          Tüm yazılar
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/></svg>
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Statik ön izleme — blog.js tam listeleyi dinamik yükler -->
+        <a href="post.html?slug=obezite-nedir" class="fade-up group block bg-cream rounded-2xl overflow-hidden border border-olive-sf hover:shadow-lg transition-shadow duration-300">
+          <div class="aspect-video overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=400&fit=crop"
+                 alt="Obezite Nedir?" loading="lazy"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-olive bg-olive-sf rounded-full px-3 py-1 mb-3">Obezite</span>
+            <h3 class="text-lg font-bold text-ink mb-2 group-hover:text-olive transition-colors">Obezite Nedir? Nedenleri ve Tedavi Yöntemleri</h3>
+            <p class="text-sm text-muted leading-relaxed mb-3">Obezite, günümüzün en yaygın kronik hastalıklarından biri. Sadece kilo fazlalığından ibaret olmayan bu durumu ve bilimsel tedavi yollarını ele aldık.</p>
+            <span class="text-xs text-muted">10 Nisan 2026 · 6 dk okuma</span>
+          </div>
+        </a>
+
+        <a href="post.html?slug=saglikli-kilo-verme" class="fade-up group block bg-cream rounded-2xl overflow-hidden border border-olive-sf hover:shadow-lg transition-shadow duration-300">
+          <div class="aspect-video overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&h=400&fit=crop"
+                 alt="Sağlıklı Kilo Verme" loading="lazy"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-olive bg-olive-sf rounded-full px-3 py-1 mb-3">Beslenme</span>
+            <h3 class="text-lg font-bold text-ink mb-2 group-hover:text-olive transition-colors">Sağlıklı Kilo Vermenin 7 Altın Kuralı</h3>
+            <p class="text-sm text-muted leading-relaxed mb-3">Hızlı diyetler yerine kalıcı ve sağlıklı kilo vermenin bilimsel yolları. Vücudunuza zarar vermeden hedefe ulaşın.</p>
+            <span class="text-xs text-muted">1 Nisan 2026 · 5 dk okuma</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════ İLETİŞİM ═══════ -->
+  <section id="iletisim" class="py-20 md:py-28 bg-cream">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-up">
+        <p class="text-olive text-sm font-semibold uppercase tracking-widest mb-3">İletişim</p>
+        <h2 class="text-3xl md:text-5xl font-bold text-ink tracking-tight mb-4">Başlayalım</h2>
+        <p class="text-muted max-w-xl mx-auto leading-relaxed">Sorularınız veya randevu talebiniz için aşağıdaki kanallardan ulaşabilirsiniz.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+
+        <!-- Sol bilgiler -->
+        <div class="fade-up">
+          <div class="space-y-6 mb-10">
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl bg-olive-sf flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-olive" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm mb-0.5">E-posta</p>
+                <!-- TODO: E-posta adresinizi yazın -->
+                <a href="mailto:eposta@example.com" class="text-muted text-sm hover:text-olive transition-colors">eposta@example.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl bg-olive-sf flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-olive" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm mb-0.5">WhatsApp</p>
+                <a href="https://wa.me/905556555555" target="_blank" rel="noopener" class="text-muted text-sm hover:text-olive transition-colors">+90 555 655 55 55</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl bg-olive-sf flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-olive" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm mb-0.5">Adres</p>
+                <!-- TODO: Klinik adresinizi ekleyin -->
+                <p class="text-muted text-sm">Klinik adresi buraya eklenecek<br>İlçe / İl</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sosyal medya -->
+          <div>
+            <p class="text-xs font-semibold text-muted uppercase tracking-widest mb-3">Sosyal Medya</p>
+            <div class="flex gap-3">
+              <!-- TODO: INSTAGRAM_URL yerine gerçek linkinizi yazın -->
+              <a href="INSTAGRAM_URL" target="_blank" rel="noopener" aria-label="Instagram"
+                 class="w-10 h-10 rounded-full bg-white border border-olive-sf flex items-center justify-center text-muted hover:text-olive hover:border-olive transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+              <!-- TODO: LINKEDIN_URL yerine gerçek linkinizi yazın -->
+              <a href="LINKEDIN_URL" target="_blank" rel="noopener" aria-label="LinkedIn"
+                 class="w-10 h-10 rounded-full bg-white border border-olive-sf flex items-center justify-center text-muted hover:text-olive hover:border-olive transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <!-- TODO: YOUTUBE_URL yerine gerçek linkinizi yazın (yoksa bu satırı silin) -->
+              <a href="YOUTUBE_URL" target="_blank" rel="noopener" aria-label="YouTube"
+                 class="w-10 h-10 rounded-full bg-white border border-olive-sf flex items-center justify-center text-muted hover:text-olive hover:border-olive transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sağ form -->
+        <div class="fade-up">
+          <form id="contact-form"
+                action="https://formspree.io/f/YOUR_FORM_ID"
+                method="POST"
+                class="space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-ink mb-1.5">Ad Soyad *</label>
+                <input type="text" name="name" required placeholder="Ad Soyad" class="form-input">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-ink mb-1.5">Telefon</label>
+                <input type="tel" name="phone" placeholder="05xx xxx xx xx" class="form-input">
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-ink mb-1.5">E-posta *</label>
+              <input type="email" name="email" required placeholder="eposta@example.com" class="form-input">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-ink mb-1.5">Konu</label>
+              <select name="subject" class="form-input">
+                <option value="">Seçin…</option>
+                <option>Online danışmanlık</option>
+                <option>Yüz yüze danışmanlık</option>
+                <option>Obezite programı</option>
+                <option>Genel bilgi</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-ink mb-1.5">Mesaj *</label>
+              <textarea name="message" required rows="4" placeholder="Mesajınızı yazın…" class="form-input resize-none"></textarea>
+            </div>
+            <div class="flex items-start gap-2">
+              <input type="checkbox" id="kvkk" name="kvkk" required class="mt-0.5 accent-olive">
+              <label for="kvkk" class="text-xs text-muted leading-relaxed">
+                Kişisel verilerimin <a href="#" class="text-olive underline underline-offset-2">KVKK kapsamında</a> işlenmesine onay veriyorum.
+              </label>
+            </div>
+            <button type="submit"
+              class="w-full bg-olive text-white font-semibold py-3.5 px-6 rounded-full hover:bg-olive-dk transition-colors">
+              Mesaj Gönder
+            </button>
+            <p id="form-msg" class="mt-2 text-sm" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Calendly CTA banner -->
+      <div class="mt-14 fade-up bg-ink rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-xl md:text-2xl font-bold text-white mb-2">Takvimden anında randevu alın</h3>
+          <p class="text-white/60 text-sm">Müsait slotları görüp doğrudan rezervasyon yapabilirsiniz.</p>
+        </div>
+        <!-- TODO: YOUR_CALENDLY_URL yerine Calendly linkinizi yazın -->
+        <a href="YOUR_CALENDLY_URL" target="_blank" rel="noopener"
+           class="flex-shrink-0 inline-flex items-center gap-2 bg-olive text-white font-semibold px-8 py-3.5 rounded-full hover:bg-olive-dk transition-colors whitespace-nowrap">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg>
+          Calendly ile Randevu Al
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+      <div class="grid md:grid-cols-3 gap-10 mb-10">
+        <div>
+          <div class="flex items-center gap-2 font-bold text-lg mb-3">
+            <span>🌿</span>
+            <!-- TODO: Kendi adınız -->
+            <span>Dyt. <span class="text-olive">Ad Soyad</span></span>
+          </div>
+          <p class="text-white/50 text-sm leading-relaxed">Kanıta dayalı, bütüncül ve kişiye özel beslenme danışmanlığıyla sağlıklı yaşam yolculuğunuzda yanınızdayım.</p>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-white/40 mb-4">Hızlı Menü</p>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li><a href="#hakkimda"  class="hover:text-white transition-colors">Hakkımda</a></li>
+            <li><a href="#hizmetler" class="hover:text-white transition-colors">Hizmetler</a></li>
+            <li><a href="#basari"    class="hover:text-white transition-colors">Başarı Hikayeleri</a></li>
+            <li><a href="blog.html"  class="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#iletisim"  class="hover:text-white transition-colors">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-white/40 mb-4">İletişim</p>
+          <ul class="space-y-2 text-sm text-white/60">
+            <!-- TODO: Gerçek iletişim bilgilerinizi ekleyin -->
+            <li><a href="mailto:eposta@example.com" class="hover:text-white transition-colors">eposta@example.com</a></li>
+            <li><a href="https://wa.me/905556555555" class="hover:text-white transition-colors">+90 555 655 55 55</a></li>
+          </ul>
+          <div class="flex gap-3 mt-5">
+            <a href="INSTAGRAM_URL" target="_blank" rel="noopener" aria-label="Instagram" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-olive transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="LINKEDIN_URL" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-olive transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
+        <p>© 2026 Dyt. Ad Soyad. Tüm hakları saklıdır.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-white/70 transition-colors">KVKK Aydınlatma Metni</a>
+          <a href="#" class="hover:text-white/70 transition-colors">Çerez Politikası</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════ FLOATING WHATSAPP ═══════ -->
+  <a id="wa-float"
+     href="https://wa.me/905556555555?text=Merhaba%2C%20randevu%20almak%20istiyorum."
+     target="_blank" rel="noopener" aria-label="WhatsApp ile ulaşın">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="./js/app.js" type="module"></script>
+</body>
+</html>

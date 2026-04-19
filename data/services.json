@@ -1,0 +1,41 @@
+[
+  {
+    "id": "online",
+    "icon": "video",
+    "title": "Online Görüşme",
+    "desc": "Evinizin konforunda, birebir video görüşme ile kişiselleştirilmiş beslenme danışmanlığı.",
+    "includes": [
+      "İlk değerlendirme ve beslenme analizi",
+      "Kişiye özel beslenme programı",
+      "Haftalık takip görüşmeleri",
+      "WhatsApp destek hattı"
+    ],
+    "cta": "Randevu Al"
+  },
+  {
+    "id": "yuzyuze",
+    "icon": "clinic",
+    "title": "Yüz Yüze Danışmanlık",
+    "desc": "Klinik ortamında kapsamlı vücut analizi ve birebir danışmanlık seansı.",
+    "includes": [
+      "Biyoimpedans vücut analizi",
+      "Detaylı beslenme öyküsü",
+      "Kişisel beslenme planı",
+      "Aylık ölçüm takibi"
+    ],
+    "cta": "Randevu Al"
+  },
+  {
+    "id": "obezite",
+    "icon": "target",
+    "title": "Obezite Programı",
+    "desc": "Kanıta dayalı, bütüncül yaklaşımla hazırlanmış 3-6 aylık kapsamlı kilo yönetimi programı.",
+    "includes": [
+      "Multidisipliner değerlendirme",
+      "Aylık laboratuvar takibi",
+      "Davranışsal beslenme koçluğu",
+      "7/24 mesaj desteği"
+    ],
+    "cta": "Detaylı Bilgi Al"
+  }
+]

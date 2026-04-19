@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "quote": "<!-- TODO: Gerçek danışan yorumu (yazılı izinli) --> 6 ayda 22 kg verdim ve en önemlisi bunu sürdürülebilir bir şekilde yaptım. Artık hayatımın bir parçası oldu.",
+    "name": "A.Y.",
+    "context": "Obezite Programı — 6 ay"
+  },
+  {
+    "id": 2,
+    "quote": "<!-- TODO: Gerçek danışan yorumu --> Online görüşme olmasına rağmen sanki yanımda gibi hissettim. Sorularımı anında yanıtladı, programı gerçekten kişiye özeldi.",
+    "name": "S.K.",
+    "context": "Online Danışmanlık — 3 ay"
+  },
+  {
+    "id": 3,
+    "quote": "<!-- TODO: Gerçek danışan yorumu --> Yıllarca diyet yaptım ama sonuç alamadım. Burada sebebini anladım — beslenme alışkanlıklarım kökten değişti.",
+    "name": "M.D.",
+    "context": "Yüz Yüze Danışmanlık — 4 ay"
+  },
+  {
+    "id": 4,
+    "quote": "<!-- TODO: Gerçek danışan yorumu --> Çocuğum doğduktan sonra kilo veremiyordum. Sabır ve bilimsel yaklaşımla hedefime ulaştım. Çok teşekkürler.",
+    "name": "E.T.",
+    "context": "Online Danışmanlık — 5 ay"
+  },
+  {
+    "id": 5,
+    "quote": "<!-- TODO: Gerçek danışan yorumu --> Doktor tavsiyesiyle başladım, beklediğimden çok daha iyi sonuç aldım. Kan değerlerim normale döndü.",
+    "name": "H.Ö.",
+    "context": "Obezite Programı — 8 ay"
+  }
+]

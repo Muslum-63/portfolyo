@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "obezite-nedir",
+    "title": "Obezite Nedir? Nedenleri ve Tedavi Yöntemleri",
+    "excerpt": "Obezite, günümüzün en yaygın kronik hastalıklarından biri. Sadece kilo fazlalığından ibaret olmayan bu durumu ve bilimsel tedavi yollarını ele aldık.",
+    "date": "2026-04-10",
+    "readMin": 6,
+    "category": "Obezite",
+    "cover": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=400&fit=crop"
+  },
+  {
+    "slug": "saglikli-kilo-verme",
+    "title": "Sağlıklı Kilo Vermenin 7 Altın Kuralı",
+    "excerpt": "Hızlı diyetler yerine kalıcı ve sağlıklı kilo vermenin bilimsel yolları. Vücudunuza zarar vermeden hedefe ulaşın.",
+    "date": "2026-04-01",
+    "readMin": 5,
+    "category": "Beslenme",
+    "cover": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&h=400&fit=crop"
+  }
+]

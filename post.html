@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Yazısı — Dyt. Ad Soyad</title>
+  <meta name="description" content="">
+  <link rel="icon" href="./assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink:'#1F2A1C', muted:'#6B7566', olive:'#6B8E5A',
+            'olive-dk':'#4F7042', 'olive-sf':'#DCE5D4', cream:'#FAFBF7',
+          },
+          fontFamily: { sans: ['Inter','system-ui','sans-serif'] },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- marked.js — markdown → HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body class="font-sans antialiased bg-cream text-ink">
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-bold text-lg text-ink">
+        <span>🌿</span>
+        <span>Dyt. <span class="text-olive">Ad Soyad</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
+        <a href="index.html#hakkimda"  class="hover:text-olive transition-colors">Hakkımda</a>
+        <a href="index.html#hizmetler" class="hover:text-olive transition-colors">Hizmetler</a>
+        <a href="blog.html"            class="hover:text-olive transition-colors">Blog</a>
+        <a href="index.html#iletisim"  class="hover:text-olive transition-colors">İletişim</a>
+      </nav>
+      <a href="index.html#iletisim" class="hidden md:inline-flex bg-olive text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-olive-dk transition-colors">
+        Randevu Al
+      </a>
+      <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-md text-muted" aria-label="Menü">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="flex-col gap-1 px-4 pb-4 bg-cream border-t border-olive-sf">
+      <a href="index.html#hakkimda"  class="block py-2.5 text-sm text-muted hover:text-olive">Hakkımda</a>
+      <a href="index.html#hizmetler" class="block py-2.5 text-sm text-muted hover:text-olive">Hizmetler</a>
+      <a href="blog.html"            class="block py-2.5 text-sm text-muted hover:text-olive">Blog</a>
+      <a href="index.html#iletisim"  class="block py-2.5 text-sm text-muted hover:text-olive">İletişim</a>
+    </div>
+  </header>
+
+  <!-- POST META (js/post.js tarafından doldurulur) -->
+  <div class="pt-24 pb-4 bg-white border-b border-olive-sf">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <a href="blog.html" class="inline-flex items-center gap-1.5 text-olive text-sm font-medium mb-6 hover:text-olive-dk transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
+        Tüm yazılar
+      </a>
+      <div id="post-meta">
+        <!-- post.js dolduracak -->
+        <div class="animate-pulse">
+          <div class="h-4 bg-olive-sf rounded w-24 mb-4"></div>
+          <div class="h-10 bg-olive-sf rounded w-3/4 mb-3"></div>
+          <div class="h-4 bg-olive-sf rounded w-48"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POST CONTENT -->
+  <main class="py-12 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <article id="post-content" class="prose">
+        <!-- post.js dolduracak -->
+      </article>
+    </div>
+  </main>
+
+  <!-- CTA BANNER -->
+  <section class="py-14 bg-olive-sf">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-ink mb-3">Bu konuda kişisel destek almak ister misiniz?</h2>
+      <p class="text-muted mb-7 text-sm leading-relaxed">Okuduklarınızı kendi durumunuza göre yorumlamak ve kişisel bir program oluşturmak için randevu alabilirsiniz.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="index.html#iletisim" class="inline-flex items-center gap-2 bg-olive text-white font-semibold px-7 py-3 rounded-full hover:bg-olive-dk transition-colors">
+          Randevu Al →
+        </a>
+        <a href="https://wa.me/905556555555?text=Merhaba%2C%20blog%20yaz%C4%B1n%C4%B1z%C4%B1%20okudum%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 border-2 border-olive text-olive font-semibold px-7 py-3 rounded-full hover:bg-olive hover:text-white transition-colors">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp'tan Sor
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
+      <p>© 2026 Dyt. Ad Soyad</p>
+      <div class="flex gap-4">
+        <a href="blog.html" class="hover:text-white/70 transition-colors">← Blog</a>
+        <a href="index.html" class="hover:text-white/70 transition-colors">Ana sayfa</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a id="wa-float" href="https://wa.me/905556555555?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="./js/app.js" type="module"></script>
+  <script src="./js/post.js" type="module"></script>
+</body>
+</html>
